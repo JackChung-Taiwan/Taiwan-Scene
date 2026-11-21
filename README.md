@@ -29,12 +29,28 @@
 4. 在 Changes 區輸入摘要，例如 `Add 100 Taiwan scenic cards` → **Commit to main**。
 5. 首次使用 **Publish repository** 上傳到 GitHub；後續更新使用 **Push origin**。
 
-**方案 B：學生從教師專案 Fork 再 Clone**
+**方案 B：學生從教師專案 Fork 再 Clone（推薦，全班每人一個作品）**
 
-1. 開啟本 GitHub 儲存庫，按 **Fork** 建立自己的版本。
-2. 開啟 GitHub Desktop → `File → Clone repository` → 選擇自己 Fork 的儲存庫。
-3. 替換圖片或修改網站標題 → **Commit to main** → **Push origin**。
-4. 前往自己的 GitHub 儲存庫檢查變更。**學生預設不能 Push 到教師原始儲存庫**，除非已獲協作者權限。
+> **先理解這些動作：** Fork 是建立自己的「線上副本」、Clone 是下載到自己電腦、Commit 是記錄本機修改版本、Push 才是同步上傳到 GitHub；最後可用 GitHub Pages 公開作品。
+
+1. **註冊與安裝：** 學生到 [GitHub](https://github.com/signup) 註冊自己的帳號，並下載 [GitHub Desktop](https://desktop.github.com/)。安裝後點 `Sign in to GitHub.com` 登入。
+2. **Fork（在 GitHub 網頁操作）：** 用瀏覽器開啟 [教師的 Taiwan-Scene 專案](https://github.com/JackChung-Taiwan/Taiwan-Scene)，在右上角點 `Fork → Create a new fork`，Owner 選自己的帳號，按 `Create fork`。完成後網址為 `github.com/學生帳號/Taiwan-Scene`。**GitHub Desktop 的首頁沒有 Fork 按鈕。**
+3. **Clone（下載到電腦）：** GitHub Desktop → `File → Clone repository...`；選擇 `學生帳號/Taiwan-Scene`，設定 `Local path`，按 `Clone`。可用 `Repository → Show in Explorer` 確認有 `images/`、`index.html`、`data.js`。
+4. **修改（一定要修改 Clone 的資料夾）：** 例如將自己拍攝且可公開使用的圖片改名為 `001.jpg`，取代 `images/001.jpg`；或修改 `index.html` 標題、`data.js` 的 `name`、`region` 等欄位，儲存檔案。
+5. **Commit（記錄版本）：** GitHub Desktop 左側 `Changes` 會出現修改檔案。確認勾選後，於左下角 `Summary (required)` 輸入 `Update Taipei 101 image`，按 `Commit to main`。**Commit 只先保留在本機。**
+6. **Push（真正上傳）：** 點上方 `Push origin`，回到自己的 GitHub 專案頁並重新整理。看得到新的圖片、文字或 Commit 訊息才代表同步完成。
+7. **Pages（進階，公開展示）：** 到自己的專案 `Settings → Pages`；在 `Build and deployment` 選 `Deploy from a branch`，設定 `main`、`/(root)`、`Save`。網站通常會在 `https://學生帳號.github.io/Taiwan-Scene/` 出現；第一次部署需要一些時間。
+
+**常見問題：**
+
+- **找不到 Fork？** 請到老師的 GitHub「網頁」右上角找，不是在 Desktop；老師本人無須 Fork 自己的專案。
+- **Clone 清單沒有？** 先確認已 Fork，Desktop 要登入同一帳號，也可用 URL 分頁貼上自己的 Fork 網址。
+- **Changes 空白？** 檔案可能修改在錯誤資料夾，或忘記儲存；要修改 Desktop Clone 的專案。
+- **Commit 後 GitHub 沒變？** 還沒 Push origin。
+- **Push 權限錯誤？** 檢查選的是學生自己的 Fork，不能直接推送老師原始專案。
+- **Pages 圖片破圖？** 確認已 Push，且 `images/001.jpg` 路徑、大小寫、副檔名跟 `data.js` 完全一致。
+
+網站首頁「學生完整操作流程」也提供每一步的**操作內容、原因解釋與完成檢查**。
 
 ## 專案結構
 
